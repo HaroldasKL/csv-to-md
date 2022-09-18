@@ -83,7 +83,7 @@ def create_md_file() -> None:
         file.write("# Activity of:\n" + "> " + user_name + "\n")
         file.write("\n## Week " + get_week_number() + " (" + get_current_week() + ")\n")
         file.write("| **Date**  | **Time**      | **Duration**  | **Activity** |\n")
-        file.write("| --------  | ------------- | ------------  | ------------ |\n")
+        file.write("| :--------:  | :-------------: | :------------:  | :------------: |\n")
 
         list_of_j_indexes = []
         for i in range(length_of_file):
