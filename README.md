@@ -25,5 +25,8 @@ Because the program also reads ***FILE NAME*** for more accurate output <br/>
 10. The **output_data.md** should look something like this <br/> <br/>
 ![image](https://user-images.githubusercontent.com/48327048/190916761-1fb67f6f-3819-493c-82ce-13f5d4663302.png) <br/>
 Keep in mind that it says **"Week 2"**, because I'm counting which week is it from certain date (2022-09-05) <br/> 
-If you want to change the starting date, you can do it in 48 line
+If you want to change the starting date, you can do it in 48 line <br/> <br/>
+
+Credits go to [Jesource](https://github.com/Jesource), it was his idea for such tool <br/>
+Link to his [implementation](https://github.com/Jesource/Log-converter/tree/08171d9d1592053ef3716396e0ba13e0abfbad4c) of the converter
 
