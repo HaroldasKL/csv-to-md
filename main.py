@@ -20,7 +20,7 @@ def search_for_file() -> str:
 
 
 FILE_NAME = search_for_file()
-
+STARTING_DATE_OF_PBL = "2022-09-05"
 
 def read_csv_file() -> list[list[str]] | list[str]:
     rows = []
@@ -45,14 +45,13 @@ def get_current_week() -> str:  # Gets current week out of the file name
 
 
 def get_week_number() -> str:
-    starting_date_of_the_PBL = "2022-09-05"
     list_of_current_date_characters = list(FILE_NAME)[19:29]
     current_date = ""
 
     for i in range(0, len(list_of_current_date_characters)):
         current_date += (list_of_current_date_characters[i])
 
-    full_starting_date = datetime.strptime(starting_date_of_the_PBL, "%Y-%m-%d")
+    full_starting_date = datetime.strptime(STARTING_DATE_OF_PBL, "%Y-%m-%d")
     full_current_date = datetime.strptime(current_date, "%Y-%m-%d")
 
     current_week_number = ((full_current_date - full_starting_date).days // 7) + 1
