@@ -78,7 +78,7 @@ def create_md_file() -> None:
     user_name = read_csv_file()[0][0]
     length_of_file = len(read_csv_file())
 
-    with open("output_data.md", "w") as file:
+    with open("Week " + get_week_number() + " (" + get_current_week()  + ").md", "w") as file:
         file.write("# Activity of:\n" + "> " + user_name + "\n")
         file.write("\n## Week " + get_week_number() + " (" + get_current_week() + ")\n")
         file.write("| **Date**  | **Time**      | **Duration**  | **Activity** |\n")
